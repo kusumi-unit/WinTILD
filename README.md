@@ -1,6 +1,6 @@
 # WinTILD
 
-WinTILD is open-source software for detecting a Transient Increase of the effective Local Diffusion (TILD) in the 2D single-molecule trajectory data. It is developed in C++ and is using the following external libraries:
+WinTILD is open-source software for detecting a Transient Increase of the effective Local Diffusion (TILD) in the 2D single-molecule trajectory data. It is developed in C++ and is using the following external library:
 
 - [Microsoft Foundation Class (MFC)](https://docs.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications?view=msvc-150)
 
