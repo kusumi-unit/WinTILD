@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinTILD", "WinTILD.vcxproj", "{52A5D1CD-4768-4559-BCAE-2C40FE127126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		DRelease|x64 = DRelease|x64
+		Release|x64 = Release|x64
+		Template|x64 = Template|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.Debug|x64.ActiveCfg = Debug|x64
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.Debug|x64.Build.0 = Debug|x64
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.DRelease|x64.ActiveCfg = DRelease|x64
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.DRelease|x64.Build.0 = DRelease|x64
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.Release|x64.ActiveCfg = Release|x64
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.Release|x64.Build.0 = Release|x64
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.Template|x64.ActiveCfg = Template|x64
+		{52A5D1CD-4768-4559-BCAE-2C40FE127126}.Template|x64.Build.0 = Template|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C044A2C4-1DED-4955-BEA6-624606343380}
+	EndGlobalSection
+EndGlobal

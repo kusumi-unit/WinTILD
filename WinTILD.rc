@@ -1,0 +1,873 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\WinTILD.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // ?W???R??g?|?[?l??g?g\r\n"
+    "#include ""afxprint.rc""       // ?o?u/?o?u?v???r??c?[ ???\\?[?X\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WinTILD.ico"
+
+IDR_WinTILDTYPE          ICON                    "res\\WinTILDDoc.ico"
+
+IDI_ICON_RESULT         ICON                    "res\\WinTILDItem.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 80, 20
+BEGIN
+    BUTTON      ID_ADDTRAJECTORY
+    BUTTON      ID_FINDDOMAIN
+    SEPARATOR
+    BUTTON      ID_UPDATE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File (&F)"
+    BEGIN
+        MENUITEM "New Project (&N)\tCtrl+N",    ID_FILE_NEW
+        MENUITEM "Open (&O)\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "Save (&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "Save As (&A)\tCtrl+Shift+S",  ID_FILE_SAVE_AS
+        MENUITEM "Export Durations (&E)",       ID_FILE_FOUND_DOMAIN_RESULT
+        MENUITEM SEPARATOR
+        MENUITEM "Print (&P)\tCtrl+P",          ID_FILE_PRINT
+        MENUITEM "Print Preview (&V)",          ID_FILE_PRINT_PREVIEW
+        MENUITEM "Printer Settings (&R)",       ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent Files",                ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "Exit Application (&X)",       ID_APP_EXIT
+    END
+    POPUP "Operation (&O)"
+    BEGIN
+        MENUITEM "Find Domain(&F)",             ID_OPERATE_FINDDOMAIN
+        MENUITEM "Update(&U)",                  ID_OPERATE_UPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "Delete (&D)",                 ID_OPERATE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All (&A)",             ID_OPERATE_SELECTALL
+    END
+    POPUP "View (&V)"
+    BEGIN
+        MENUITEM "Input Dialog (&I)",           ID_VIEW_INPUTDLG
+        MENUITEM "Parameter Dialog (&P)",       ID_VIEW_PARAMETERDLG
+        MENUITEM "Toolbar (&T)",                ID_VIEW_TOOLBAR
+        MENUITEM "Status Bar(&S)",              ID_VIEW_STATUS_BAR
+        MENUITEM "Play Dialog (&A)",            ID_VIEW_PLAYDLG
+        MENUITEM SEPARATOR
+        MENUITEM "Settings (&O)",               ID_VIEW_OPTION
+        MENUITEM "Details (&D)",                ID_VIEW_DETAIL
+        MENUITEM SEPARATOR
+        POPUP "Magnify (&M)"
+        BEGIN
+            MENUITEM "x2.00",                       ID_VIEW_MAGNIFY_200
+            MENUITEM "x1.50",                       ID_VIEW_MAGNIFY_150
+            MENUITEM "x1.25",                       ID_VIEW_MAGNIFY_125
+            MENUITEM SEPARATOR
+            MENUITEM "x1.00(&O)",                   ID_VIEW_MAGNIFY_100
+            MENUITEM SEPARATOR
+            MENUITEM "x0.75",                       ID_VIEW_MAGNIFY_075
+            MENUITEM "x0.50",                       ID_VIEW_MAGNIFY_050
+            MENUITEM "x0.25",                       ID_VIEW_MAGNIFY_025
+        END
+    END
+    POPUP "Help (&H)"
+    BEGIN
+        MENUITEM "Version of WinTILD(&A)...",    ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報 WinTILD"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,21
+    LTEXT           "WinTILD Version 1.0",IDC_STATIC,45,18,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 Kusumi Lab.",IDC_STATIC,45,31,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_INPUT_DIALOG DIALOGEX 0, 0, 219, 192
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Input"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_INPUT,7,7,139,94,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "Add(&A)",IDC_BUTTON_ADD,151,7,61,14
+    PUSHBUTTON      "Delete(&D)",IDC_BUTTON_REMOVE,151,28,61,14
+    PUSHBUTTON      "ClearAll(&C)",IDC_BUTTON_CLEAR,151,49,61,14
+    PUSHBUTTON      "▲",IDC_BUTTON_UP,151,73,24,14
+    PUSHBUTTON      "▼",IDC_BUTTON_DOWN,188,73,24,14
+    CONTROL         "",IDC_SLIDER_INPUT_FROM,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,76,146,136,15
+    CONTROL         "",IDC_SLIDER_INPUT_TO,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,76,165,136,15
+    EDITTEXT        IDC_EDIT_INPUT_FROM,24,146,35,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_INPUT_TO,24,165,35,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_INPUT_FROM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,61,146,11,14
+    CONTROL         "",IDC_SPIN_INPUT_TO,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,61,165,11,14
+    LTEXT           "from",IDC_STATIC,7,149,16,8
+    LTEXT           "to",IDC_STATIC,7,168,8,8
+    RTEXT           "frames",IDC_STATIC_FRAMES,7,180,64,8
+    CONTROL         "Delete after calculation",IDC_CHECK_DELETEAFTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,103,90,10
+    CONTROL         "Don't show message to confirm",IDC_CHECK_DONTSHOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,114,121,10
+    LTEXT           "smoothing (2N - 1)",IDC_STATIC_SMOOTHING,7,129,66,9
+    EDITTEXT        IDC_EDIT_SMOOTHING,72,127,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_SMOOTHING,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,113,126,11,16
+END
+
+IDD_PARAMETER_DIALOG DIALOGEX 0, 0, 131, 240
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Parameter"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_WFROM,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,23,117,15
+    CONTROL         "",IDC_SLIDER_WTO,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,59,117,15
+    EDITTEXT        IDC_EDIT_WFROM,69,9,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_WTO,69,45,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_THRESHOLD,55,128,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "threshold",IDC_STATIC,7,131,31,8
+    LTEXT           "from (frame)",IDC_STATIC,7,15,42,8
+    LTEXT           "to (frame)",IDC_STATIC,7,51,34,8
+    CONTROL         "",IDC_SPIN_WFROM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,110,7,14,16
+    CONTROL         "",IDC_SPIN_WTO,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,110,43,14,16
+    CONTROL         "",IDC_SPIN_THRESHOLD,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,96,127,13,16
+    CONTROL         "",IDC_SPIN_THRESHOLD_FINE,"msctls_updown32",UDS_ARROWKEYS,112,127,12,16
+    LTEXT           "ratio (%)",IDC_STATIC,7,167,30,8
+    EDITTEXT        IDC_EDIT_RATIO,55,164,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_RATIO,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,96,163,13,16
+    CONTROL         "",IDC_SPIN_RATIO_FINE,"msctls_updown32",UDS_ARROWKEYS,112,163,12,16
+    LTEXT           "skip (frames)",IDC_STATIC,7,186,42,8
+    EDITTEXT        IDC_EDIT_SKIP,55,183,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_SKIP,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,96,182,13,16
+    CONTROL         "interactive",IDC_CHECK_INTERACTIVE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,30,219,70,13
+    EDITTEXT        IDC_EDIT_CALCAVEFROM,27,100,26,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CALCAVETO,85,100,26,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_CALCAVEFROM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,53,99,12,16
+    CONTROL         "",IDC_SPIN_CALCAVETO,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,112,99,12,16
+    LTEXT           "from",IDC_STATIC,10,103,16,8
+    LTEXT           "to",IDC_STATIC,76,103,8,8
+    EDITTEXT        IDC_EDIT_MAXIMUM,55,145,40,15,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "display",IDC_STATIC,7,144,22,8,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SPIN_MAXIMUM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,96,144,11,17
+    CONTROL         "",IDC_SPIN_MAXIMUM_FINE,"msctls_updown32",UDS_ARROWKEYS,112,144,11,18
+    GROUPBOX        "",IDC_STATIC,7,79,117,40
+    LTEXT           "Dmicro range",IDC_STATIC,7,86,43,8
+    CONTROL         "draw boundaries",IDC_CHECK_DRAW_BOUNDARIES,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,30,202,69,14
+    LTEXT           "maximum",IDC_STATIC,7,152,31,12,0,WS_EX_TRANSPARENT
+END
+
+IDD_PROGRESS_DIALOG DIALOGEX 0, 0, 261, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "please wait..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,204,1,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,37,247,13
+    LTEXT           "",IDC_STATIC_MESSAGE,7,4,247,30
+END
+
+IDD_HISTOGRAM_DIALOG DIALOGEX 0, 0, 374, 152
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Histogram"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Get",IDC_BUTTON_GETHISTOGRAM,317,131,50,14,NOT WS_VISIBLE | WS_DISABLED
+END
+
+IDD_DOMAIN_PROPERTY DIALOGEX 0, 0, 127, 73
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "domain"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "domain index",IDC_STATIC,7,18,61,8
+    CONTROL         "",IDC_SPIN_DOMAININDEX,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,109,15,11,14
+    EDITTEXT        IDC_EDIT_DOMAININDEX,69,15,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_TRAJECTORY_PROPERTY DIALOGEX 0, 0, 256, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Trajectory"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "width",IDC_STATIC,7,7,18,8
+    LTEXT           "height",IDC_STATIC,70,7,21,8
+    EDITTEXT        IDC_EDIT_TRAJECTORY_WIDTH,7,17,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TRAJECTORY_WIDTH,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,47,16,12,16
+    EDITTEXT        IDC_EDIT_TRAJECTORY_HEIGHT,69,17,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TRAJECTORY_HEIGHT,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,109,16,12,16
+    CONTROL         "square",IDC_CHECK_TRAJECTORY_SQUARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,45,38,10
+    GROUPBOX        "color",IDC_STATIC,128,7,122,186
+    LTEXT           "plot area",IDC_STATIC,144,45,30,8
+    CONTROL         "",IDC_PICTURE_TRAJ_PLOTAREA,"Static",SS_BLACKFRAME,189,45,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_PLOTAREA,225,43,18,12
+    LTEXT           "margin",IDC_STATIC,144,59,22,8
+    CONTROL         "",IDC_PICTURE_TRAJ_MARGIN,"Static",SS_BLACKFRAME,189,59,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_MARGIN,225,57,18,12
+    LTEXT           "frame",IDC_STATIC,144,73,20,8
+    CONTROL         "",IDC_PICTURE_TRAJ_FRAME,"Static",SS_BLACKFRAME,189,73,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_FRAME,225,71,18,12
+    LTEXT           "from",IDC_STATIC,144,88,16,8
+    CONTROL         "",IDC_PICTURE_TRAJ_FROM,"Static",SS_BLACKFRAME,189,88,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_FROM,225,86,18,12
+    LTEXT           "to",IDC_STATIC,144,103,8,8
+    CONTROL         "",IDC_PICTURE_TRAJ_TO,"Static",SS_BLACKFRAME,189,103,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_TO,225,101,18,12
+    LTEXT           "boundary",IDC_STATIC,144,118,32,8
+    CONTROL         "",IDC_PICTURE_TRAJ_BOUNDARY,"Static",SS_BLACKFRAME,189,118,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_BOUNDARY,225,116,18,12
+    CONTROL         "draw start/end points",IDC_CHECK_TRAJ_DRAWSTARTEND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,112,10
+    CONTROL         "draw coordinates",IDC_CHECK_TRAJ_DRAWCOORDINATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,84,102,10
+    CONTROL         "draw from/to points",IDC_CHECK_TRAJ_DRAWFROMTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,71,102,10
+    CONTROL         "draw boundary",IDC_CHECK_TRAJ_DRAWBOUNDARY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,97,102,10
+    CONTROL         "draw text at boundary",IDC_CHECK_TRAJ_DRAWBOUNDARYTEXT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,108,100,10
+    CONTROL         "",IDC_PICTURE_TRAJ_BG,"Static",SS_BLACKFRAME,189,16,31,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_BG,225,13,18,12
+    CONTROL         "background",IDC_CHECK_TRAJ_BACKGROUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,16,53,10
+    CONTROL         "",IDC_PICTURE_TRAJ_TEXTBG,"Static",SS_BLACKFRAME,189,30,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_TEXTBG,225,27,18,12
+    CONTROL         "text bg",IDC_CHECK_TRAJ_TEXTBG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,30,39,10
+    LTEXT           "line1",IDC_STATIC,144,132,16,8
+    CONTROL         "",IDC_PICTURE_TRAJ_LINE1,"Static",SS_BLACKFRAME,189,132,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_LINE1,225,130,18,12
+    LTEXT           "line2",IDC_STATIC,144,144,16,8
+    CONTROL         "",IDC_PICTURE_TRAJ_LINE2,"Static",SS_BLACKFRAME,189,144,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_LINE2,225,142,18,12
+    LTEXT           "line3",IDC_STATIC,144,157,16,8
+    CONTROL         "",IDC_PICTURE_TRAJ_LINE3,"Static",SS_BLACKFRAME,189,157,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_LINE3,225,155,18,12
+    LTEXT           "line4",IDC_STATIC,144,170,16,8
+    CONTROL         "",IDC_PICTURE_TRAJ_LINE4,"Static",SS_BLACKFRAME,189,170,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_LINE4,225,168,18,12
+    LTEXT           "line5",IDC_STATIC,144,182,16,8
+    CONTROL         "",IDC_PICTURE_TRAJ_LINE5,"Static",SS_BLACKFRAME,189,182,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_TRAJ_LINE5,225,181,18,12
+END
+
+IDD_DIVMSD_PROPERTY DIALOGEX 0, 0, 286, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "H(m,n)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "use size",IDC_RADIO_USESIZE,"Button",BS_AUTORADIOBUTTON,7,7,41,10
+    EDITTEXT        IDC_EDIT_DIVMSD_SIZE,51,15,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_DIVMSD_SIZE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,91,14,13,16
+    CONTROL         "use magnify",IDC_RADIO_USEMAGNIFY,"Button",BS_AUTORADIOBUTTON,7,32,55,10
+    EDITTEXT        IDC_EDIT_DIVMSD_MAGNIFY,51,43,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_DIVMSD_MAGNIFY,"msctls_updown32",UDS_ARROWKEYS,91,42,13,16
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_BASECOLOR,253,72,18,12
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_THRESHOLD,253,87,18,12
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_STARTLINE,253,103,18,12
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_ENDLINE,253,118,18,12
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_BOUNDARY,253,133,18,12
+    LTEXT           "size",IDC_STATIC,33,18,13,8
+    LTEXT           "magnify",IDC_STATIC,20,46,26,8
+    LTEXT           "under threshold",IDC_STATIC,165,89,52,8
+    LTEXT           "base",IDC_STATIC,165,74,16,8
+    CONTROL         "",IDC_PICTURE_DMSD_BASECOLOR,"Static",SS_BLACKFRAME,217,74,32,9
+    CONTROL         "",IDC_PICTURE_DMSD_THRESHOLD,"Static",SS_BLACKFRAME,217,89,32,9
+    LTEXT           "line (from)",IDC_STATIC,165,105,34,8
+    CONTROL         "",IDC_PICTURE_DMSD_STARTLINE,"Static",SS_BLACKFRAME,217,105,32,9
+    LTEXT           "line (to)",IDC_STATIC,165,120,26,8
+    CONTROL         "",IDC_PICTURE_DMSD_ENDLINE,"Static",SS_BLACKFRAME,217,120,32,9
+    LTEXT           "boundary",IDC_STATIC,165,135,32,8
+    CONTROL         "",IDC_PICTURE_DMSD_BOUNDARY,"Static",SS_BLACKFRAME,217,135,32,9
+    GROUPBOX        "color",IDC_STATIC,150,7,129,147
+    CONTROL         "draw from/to lines",IDC_CHECK_DMSD_DRAWFROMTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,61,74,10
+    CONTROL         "line method (on: StrechBlt off: LineTo)",IDC_CHECK_DMSD_DRAWLINEMETHOD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,106,138,10
+    CONTROL         "draw boundaries",IDC_CHECK_DMSD_DRAWBOUNDARY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,83,69,10
+    CONTROL         "draw frame at boundary",IDC_CHECK_DMSD_DRAWBOUNDARYFRAME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,95,94,10
+    CONTROL         "draw frame at from/to line",IDC_CHECK_DMSD_DRAWFROMTOFRAME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,72,100,10
+    CONTROL         "draw magnify",IDC_CHECK_DMSD_DRAWMAGNIFY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,117,59,10
+    CONTROL         "draw scale",IDC_CHECK_DMSD_DRAWSCALE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,128,50,10
+    CONTROL         "",IDC_PICTURE_DMSD_BG,"Static",SS_BLACKFRAME,217,17,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_BG,253,14,18,12
+    CONTROL         "background",IDC_CHECK_DMSD_BACKGROUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,17,53,10
+    CONTROL         "",IDC_PICTURE_DMSD_TEXTBG,"Static",SS_BLACKFRAME,217,31,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_TEXTBG,253,28,18,12
+    CONTROL         "text bg",IDC_CHECK_DMSD_TEXTBG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,31,39,10
+    LTEXT           "margin",IDC_STATIC,165,45,22,8
+    CONTROL         "",IDC_PICTURE_DMSD_MARGIN,"Static",SS_BLACKFRAME,217,45,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_MARGIN,253,43,18,12
+    LTEXT           "frame",IDC_STATIC,165,59,20,8
+    CONTROL         "",IDC_PICTURE_DMSD_FRAME,"Static",SS_BLACKFRAME,217,59,32,9
+    PUSHBUTTON      "...",IDC_BUTTON_DMSD_FRAME,253,57,18,12
+    CONTROL         "",IDC_PICTURE_THRESHOLD_COLOR,"Static",SS_BLACKFRAME,67,141,12,11
+    CONTROL         "",IDC_SLIDER_THRESHOLD_COLOR,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,139,52,14
+    LTEXT           "threshold color",IDC_STATIC,7,142,60,9
+    EDITTEXT        IDC_EDIT2,124,142,26,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_PROGRESSLIST_DIALOG DIALOGEX 0, 0, 231, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_PROGRESS,7,7,217,131,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_BRUSH_DIALOG DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Brush Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,73,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,129,73,50,14
+    LTEXT           "style",IDC_STATIC,7,10,16,8
+    LTEXT           "color",IDC_STATIC,7,53,16,8
+    LTEXT           "hatch",IDC_STATIC,7,32,19,8
+    CONTROL         "",IDC_PICTURE_BRUSH_COLOR,"Static",SS_BLACKFRAME,37,49,40,16
+    PUSHBUTTON      "...",IDC_BUTTON_BRUSH_COLOR,79,50,18,14
+    COMBOBOX        IDC_COMBO_BRUSH_STYLE,37,8,114,79,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BRUSH_HATCH,37,30,114,57,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PEN_DIALOG DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pen Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,73,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,129,73,50,14
+    LTEXT           "style",IDC_STATIC,7,10,16,8
+    LTEXT           "color",IDC_STATIC,7,53,16,8
+    CONTROL         "",IDC_PICTURE_PEN_COLOR,"Static",SS_BLACKFRAME,35,49,40,16
+    PUSHBUTTON      "...",IDC_BUTTON_PEN_COLOR,79,50,18,14
+    COMBOBOX        IDC_COMBO_PEN_STYLE,35,8,114,79,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "width",IDC_STATIC,7,30,18,8
+    EDITTEXT        IDC_EDIT_PEN_WIDTH,35,27,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PEN_WIDTH,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,79,26,13,16
+END
+
+IDD_GENERAL_PROPERTY DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "background",IDC_STATIC,7,12,38,8
+    CONTROL         "",IDC_STATIC_GENERAL_BACKGROUND,"Static",SS_BLACKFRAME,52,11,25,10
+    PUSHBUTTON      "...",IDC_BUTTON_GENERAL_BACKGROUND,80,9,17,14
+END
+
+IDD_PLAY_DIALOG DIALOGEX 0, 0, 437, 294
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PLAY_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,234,423,15
+    PUSHBUTTON      "<|",IDC_PLAY_BUTTON_PLAYBACKWARD,119,256,56,31
+    PUSHBUTTON      "STOP",IDC_PLAY_BUTTON_STOP,190,256,56,31
+    EDITTEXT        IDC_PLAY_EDIT_CURRENTFRAME,346,272,29,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PLAY_SPIN_CURRENTFRAME,"msctls_updown32",UDS_ARROWKEYS,375,272,10,13
+    LTEXT           "/",IDC_PLAY_STATIC_SLASH,386,274,8,8
+    EDITTEXT        IDC_PLAY_EDIT_ENDFRAME,400,272,30,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PLAY_EDIT_FPS,361,256,25,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PLAY_SPIN_FPS,"msctls_updown32",UDS_ARROWKEYS,386,256,11,13
+    LTEXT           "fps",IDC_STATIC,402,258,11,8
+    GROUPBOX        "Trajectory Viewer",IDC_PLAY_VIEW,50,7,336,216
+    PUSHBUTTON      "|>",IDC_PLAY_BUTTON_PLAY,261,256,56,31
+    LTEXT           "1",IDC_PLAY_TEXT_SCALE,386,15,26,8,0,WS_EX_RIGHT
+    LTEXT           "x",IDC_STATIC,414,15,12,8
+    CONTROL         "",IDC_PLAY_SLIDER_SCALE,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,401,24,16,196
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,1,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "Kusumi Lab."
+            VALUE "FileDescription", "Domain Finder for Win32"
+            VALUE "FileVersion", "0.0.1.0"
+            VALUE "InternalName", "WinTILD.EXE"
+            VALUE "LegalCopyright", "(C) Kusumi Lab..  All rights reserved."
+            VALUE "OriginalFilename", "WinTILD.EXE"
+            VALUE "ProductName", "WinTILD"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_INPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        VERTGUIDE, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+        HORZGUIDE, 73
+        HORZGUIDE, 134
+        HORZGUIDE, 153
+    END
+
+    IDD_PARAMETER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+        HORZGUIDE, 23
+        HORZGUIDE, 59
+        HORZGUIDE, 97
+        HORZGUIDE, 117
+        HORZGUIDE, 135
+        HORZGUIDE, 152
+        HORZGUIDE, 171
+        HORZGUIDE, 190
+        HORZGUIDE, 209
+        HORZGUIDE, 225
+    END
+
+    IDD_PROGRESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_HISTOGRAM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+        HORZGUIDE, 7
+    END
+
+    IDD_DOMAIN_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+        HORZGUIDE, 40
+    END
+
+    IDD_TRAJECTORY_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 144
+        VERTGUIDE, 189
+        VERTGUIDE, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+        HORZGUIDE, 122
+        HORZGUIDE, 136
+        HORZGUIDE, 148
+        HORZGUIDE, 161
+        HORZGUIDE, 174
+        HORZGUIDE, 186
+    END
+
+    IDD_DIVMSD_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        VERTGUIDE, 19
+        VERTGUIDE, 91
+        VERTGUIDE, 124
+        VERTGUIDE, 165
+        VERTGUIDE, 217
+        VERTGUIDE, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_PROGRESSLIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_BRUSH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 57
+    END
+
+    IDD_PEN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 14
+        HORZGUIDE, 34
+        HORZGUIDE, 57
+    END
+
+    IDD_GENERAL_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 16
+    END
+
+    IDD_PLAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 430
+        VERTGUIDE, 50
+        VERTGUIDE, 218
+        VERTGUIDE, 284
+        VERTGUIDE, 346
+        VERTGUIDE, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+        HORZGUIDE, 19
+        HORZGUIDE, 241
+        HORZGUIDE, 262
+        HORZGUIDE, 278
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\WinTILD.manifest"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MAGNIFY             CURSOR                  "res\\Magnify.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PARAMETER_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_INPUT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WinTILD\n\nWinTILD\nWinTILD Project Files (*.dfp)\n.dfp\nWinTILD.Document\nWinTILD Project"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WinTILD"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書"
+    ID_INDICATOR_REC        "記録"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "新規にファイルを作成\n新規ファイル"
+    ID_FILE_OPEN            "既存のファイルを開く\n開く"
+    ID_FILE_CLOSE           "作業中のファイルを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のファイルを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のファイルを新しい名前で保存\n名前をつけて保存"
+    ID_FILE_PAGE_SETUP      "印刷オプションの変更\nページ レイアウトの設定"
+    ID_FILE_PRINT_SETUP     "プリンタおよび印刷オプションの変更\n印刷設定"
+    ID_FILE_PRINT           "作業中のファイルを印刷\n印刷"
+    ID_FILE_PRINT_PREVIEW   "印刷イメージを表示\n印刷プレビュー"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "プログラム情報、バージョン、著作権を表示します。\nバージョン情報"
+    ID_APP_EXIT             "アプリケーションを終了し、ファイルの保存を指示\\終了"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のファイルを開く"
+    ID_FILE_MRU_FILE2       "指定のファイルを開く"
+    ID_FILE_MRU_FILE3       "指定のファイルを開く"
+    ID_FILE_MRU_FILE4       "指定のファイルを開く"
+    ID_FILE_MRU_FILE5       "指定のファイルを開く"
+    ID_FILE_MRU_FILE6       "指定のファイルを開く"
+    ID_FILE_MRU_FILE7       "指定のファイルを開く"
+    ID_FILE_MRU_FILE8       "指定のファイルを開く"
+    ID_FILE_MRU_FILE9       "指定のファイルを開く"
+    ID_FILE_MRU_FILE10      "指定のファイルを開く"
+    ID_FILE_MRU_FILE11      "指定のファイルを開く"
+    ID_FILE_MRU_FILE12      "指定のファイルを開く"
+    ID_FILE_MRU_FILE13      "指定のファイルを開く"
+    ID_FILE_MRU_FILE14      "指定のファイルを開く"
+    ID_FILE_MRU_FILE15      "指定のファイルを開く"
+    ID_FILE_MRU_FILE16      "指定のファイルを開く"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "次のウィンドウに切り替える\n次のペイン"
+    ID_PREV_PANE            "前のウィンドウに切り替える\n前のペイン"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "作業中のウィンドウを分割\n分割"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をコピーしてクリップボードに保存\n保存"
+    ID_EDIT_CUT             "選択範囲を切り取ってクリップボードに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "クリップボードの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ファイル内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\n繰り返す"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "ツール バーの 表示/非表示\nツール バーの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ステータス バーの 表示/非表示\nステータス バーの表示切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "ウィンドウのサイズを変更"
+    AFX_IDS_SCMOVE          "ウィンドウの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ウィンドウを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ウィンドウを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のウィンドウに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のウィンドウに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のウィンドウを閉じ、変更したファイルの保存を指示"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "ウィンドウを通常のサイズに戻す"
+    AFX_IDS_SCTASKLIST      "タスク一覧をアクティブにする"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "印刷プレビュー モードの終わり\nプレビューのキャンセル"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ADDTRAJECTORY        "軌跡入力ダイアログを表示します"
+    ID_CALCMSD              "MSDを計算します"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\WinTILD.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // ?W???R??g?|?[?l??g?g
+#include "afxprint.rc"       // ?o?u/?o?u?v???r??c?[ ???\?[?X
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
