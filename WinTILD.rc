@@ -65,7 +65,7 @@ END
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\WinTILD.ico"
 
-IDR_WinTILDTYPE          ICON                    "res\\WinTILDDoc.ico"
+//IDR_WinTILDTYPE          ICON                    "res\\WinTILDDoc.ico"
 
 IDI_ICON_RESULT         ICON                    "res\\WinTILDItem.ico"
 
@@ -186,7 +186,7 @@ END
 
 IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "バージョン情報 WinTILD"
+CAPTION "Version Information of WinTILD"
 FONT 9, "MS UI Gothic", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,21
@@ -428,7 +428,7 @@ CAPTION "Brush Configuration"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,73,73,50,14
-    PUSHBUTTON      "キャンセル",IDCANCEL,129,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,73,50,14
     LTEXT           "style",IDC_STATIC,7,10,16,8
     LTEXT           "color",IDC_STATIC,7,53,16,8
     LTEXT           "hatch",IDC_STATIC,7,32,19,8
@@ -444,7 +444,7 @@ CAPTION "Pen Configuration"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,73,73,50,14
-    PUSHBUTTON      "キャンセル",IDCANCEL,129,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,73,50,14
     LTEXT           "style",IDC_STATIC,7,10,16,8
     LTEXT           "color",IDC_STATIC,7,53,16,8
     CONTROL         "",IDC_PICTURE_PEN_COLOR,"Static",SS_BLACKFRAME,35,49,40,16
@@ -511,7 +511,7 @@ BEGIN
         BLOCK "041103a4"
         BEGIN
             VALUE "CompanyName", "Kusumi Lab."
-            VALUE "FileDescription", "Domain Finder for Win32"
+            VALUE "FileDescription", "TILD Finder for Win64"
             VALUE "FileVersion", "0.0.1.0"
             VALUE "InternalName", "WinTILD.EXE"
             VALUE "LegalCopyright", "(C) Kusumi Lab..  All rights reserved."
