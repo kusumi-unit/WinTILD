@@ -7,7 +7,7 @@ WinTILD is open-source software for detecting a Transient Increase of the effect
 - Microsoft Visual Studio 2017 (Version 15.9.22)
   - Visual C++ 2017 
 
-## Manual
+## How to Use
 
 - See /doc/WinTILDQuickManual.pdf. Sample data used in the manual are available at /sample directory.
 
