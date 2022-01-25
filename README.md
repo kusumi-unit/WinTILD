@@ -9,7 +9,7 @@ WinTILD is open-source software for detecting a Transient Increase of the effect
 
 ## How to Use
 
-- See /doc/WinTILDQuickManual.pdf. Sample data used in the manual are available at /sample directory.
+- See /doc/WinTILDQuickManual.pdf. Sample data in the manual are available at /sample directory.
 
 ## Reference
 
